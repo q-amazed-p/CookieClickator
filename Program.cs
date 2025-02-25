@@ -44,7 +44,8 @@ namespace CookieClickator
                 IWebDriver driver = new ChromeDriver();
                 driver.Navigate().GoToUrl("https://orteil.dashnet.org/cookieclicker/");
 
-                driver.FindElement(By.CssSelector(".fc-primary-button")).Click();
+                driver.FindElement(By.CssSelector(".fc-secondary-button")).Click();
+                driver.FindElement(By.CssSelector(".fc-confirm-choices")).Click();
 
                 WaitToFindElement("#langSelect-EN").Click();
 
